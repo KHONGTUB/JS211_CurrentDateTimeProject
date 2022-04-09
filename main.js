@@ -69,10 +69,36 @@ checkType("Hello")
 // Write a JavaScript program that adds 2 numbers together.
 
 
-const add = (num1,num2) => {
-  let sum = num1 + num2
+const add = (num) => {
 
-  return sum
+  let num1 
+  let num2 
+
+
+  if(num1 === undefined)
+  {
+    console.log(typeof num1)
+    num1 = num
+    console.log(typeof num1)
+    document.getElementById("text").innerHTML = "Enter second number"
+    
+  }
+  else
+  {
+
+    console.log("hello")
+    num2 = num
+
+    
+    let sum = num1 + num2
+
+    document.getElementById("displayadd").innerHTML = "The sum of " + num1 + "+" + num2 + " = " + sum
+
+  }
+
+
+
+
 }
 
 
