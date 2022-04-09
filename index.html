@@ -42,12 +42,27 @@
 
 
       <div id="text">Enter first number:</div>
-      <input type="text" id="number">
-      <button onclick="add(number.value)">Click Me</button>
+      <input type="text" id="firstnumber">
+      <div id="text">Enter second number:</div>
+      <input type="text" id="secondnumber">
+      <button onclick="add(firstnumber.value, secondnumber.value)">Click Me</button>
       <div id="displayadd"></div>
 
-    </section>
+    </section><br><br>
 
+    <section id="displaytrue">
+
+      <button onclick="twoTrue()">Click Me</button>
+      <div id="displaytwotrue"></div><br><br>
+
+      <button onclick="oneTrue()">Click Me</button>
+      <div id="displayonetrue"></div><br><br>
+
+      <button onclick="noneTrue()">Click Me</button>
+      <div id="displaynonetrue"></div><br><br>
+
+
+    </section>
 
 
     <hr/> 

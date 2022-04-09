@@ -69,34 +69,16 @@ checkType("Hello")
 // Write a JavaScript program that adds 2 numbers together.
 
 
-const add = (num) => {
+const add = (num1, num2) => {
 
-  let num1 
-  let num2 
+  let numone = Number(num1)
+  let numtwo = Number(num2)
 
+  console.log(typeof numone)
 
-  if(num1 === undefined)
-  {
-    console.log(typeof num1)
-    num1 = num
-    console.log(typeof num1)
-    document.getElementById("text").innerHTML = "Enter second number"
-    
-  }
-  else
-  {
+  let sum = numone + numtwo;
 
-    console.log("hello")
-    num2 = num
-
-    
-    let sum = num1 + num2
-
-    document.getElementById("displayadd").innerHTML = "The sum of " + num1 + "+" + num2 + " = " + sum
-
-  }
-
-
+  document.getElementById("displayadd").innerHTML = num1 + "+" + num2 + " = " + sum
 
 
 }
@@ -106,13 +88,13 @@ const add = (num) => {
 // Write a JavaScript program that runs only when 2 things are true.
 
 const twoTrue = () => {
-  let num1 = Math.floor(Math.random() * 6)
-  let num2 = Math.floor(Math.random() * 6)
+  let num1 = Math.floor(Math.random() * 10)
+  let num2 = Math.floor(Math.random() * 10)
 
   if(num1 <= 5 && num2 > 5){
     console.log(num1)
     console.log(num2)
-    console.log("twoTrue function ran successfully")
+    document.getElementById("displaytwotrue").innerHTML = "If you are reading this the twoTrue function has run"
   }
 
 }
@@ -126,7 +108,7 @@ const oneTrue = () => {
   if(num1 <= 5 || num2 > 5){
     console.log(num1)
     console.log(num2)
-    console.log("oneTrue program ran successfully")
+    document.getElementById("displayonetrue").innerHTML = "If you are reading this the oneTrue function has run"
   }
 
 }
@@ -134,13 +116,13 @@ const oneTrue = () => {
 
 
 const noneTrue = () => {
-  let num1 = Math.floor(Math.random() * 6)
-  let num2 = Math.floor(Math.random() * 6)
+  let num1 = Math.floor(Math.random() * 10)
+  let num2 = Math.floor(Math.random() * 10)
 
   if((num1 <= 5) === false && (num2 > 5) === false){
     console.log(num1)
     console.log(num2)
-    console.log("noneTrue program ran successfully")
+    document.getElementById("displaynonetrue").innerHTML = "If you are reading this the noneTrue function has run"
   }
 
 }
